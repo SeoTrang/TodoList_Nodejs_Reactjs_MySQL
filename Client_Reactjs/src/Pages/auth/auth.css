@@ -1,0 +1,13 @@
+#auth .MuiTextField-root {
+    width: 100%;
+    margin-top: 1em;
+    /* font-size: 1.5em; */
+}
+#auth .MuiTextField-root label{
+    font-size: 1em;
+}
+#auth .MuiTextField-root input{
+    width: 100%;
+    font-size: 1.1em !important;
+
+}

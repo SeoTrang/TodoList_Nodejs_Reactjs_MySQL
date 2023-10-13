@@ -1,0 +1,349 @@
+.container {
+  padding-top: 50px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  color:  #2b3445;
+  padding: 50px 20px;
+  
+}
+
+.header a{
+  text-decoration: none;
+  color: #2b3445;
+}
+
+.bg-w{
+  background-color: white;
+}
+
+
+.mt-3{
+  margin-top: 3em;
+}
+
+.list-todo{
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr); /* Repeat 3 times with 1fr width for each column */
+
+}
+
+.input{
+  background-color: #ffffff;
+  width: 80%;
+}
+
+.card{
+    width: 90%;
+    padding: 2em 3em;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #c1c1c1,
+                -5px -5px 10px #ffffff;
+    /* padding: 10px; */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+}
+
+.input {
+  min-height: 50px;
+  /* max-width: 150px; */
+  padding: 0 1rem;
+  color: #2b3445;
+  font-size: 15px;
+  border: 1px solid #5e4dcd;
+  /* border: none; */
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 51px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #5e4dcd;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+
+.card .title{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+
+
+.BoxNeed{
+  color: rgb(1, 41, 114)  !important;
+  background: linear-gradient(135deg, rgba(104, 205, 249, 0.2), rgba(7, 141, 238, 0.2)) rgb(255, 255, 255);
+}
+
+.BoxDoing{
+  color: rgb(122, 65, 0)  !important;
+  background: linear-gradient(135deg, rgba(255, 214, 102, 0.2), rgba(255, 171, 0, 0.2)) rgb(255, 255, 255);
+}
+
+.BoxDid{
+  color: rgb(0, 55, 104) !important;
+  background: linear-gradient(135deg, rgba(97, 243, 243, 0.2), rgba(0, 184, 217, 0.2)) rgb(255, 255, 255);
+}
+
+.task{
+  /* background-color: #2b3445; */
+  padding: 0.2em 0.3em;
+  width: 70%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+
+.task i{
+  margin-right: 20px;
+  color: #e94560;
+}
+
+/* .task:hover{
+  background-color: #3898EC;
+  color: #ffffff;
+  transition: 0.2s;
+  cursor: pointer;
+} */
+
+.rowTask{
+  display: flex;
+  border-radius: 5px;
+}
+
+.rowTask .action{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rowTask:hover{
+  cursor: pointer;
+}
+
+.rowTask .edit{
+  color: #5e4dcd;
+}
+
+.rowTask .delete{
+  color: #e94560;
+}
+
+.rowTask i:hover{
+  transform: scale(1.1);
+  transition: linear 0.2s;
+}
+
+.rowTask .delete:hover{
+  color: red;
+}
+
+.rowTask:hover{
+  /* background-color: #626f86; */
+  background-color: #3898EC;
+  /* color: #ffffff; */
+  transition: 0.2s;
+  cursor: pointer;
+}
+.rowTask:hover .task span{
+  color: #fff;
+}
+
+.rowTask:hover .menu{
+  color: #fff;
+}
+
+/* .rowTask:hover .edit{
+  color: #ffffff;
+} */
+
+.rowTask{
+  padding: 0.3em 0.5em;
+  margin-top: 1em;
+  box-shadow:  2px 2px 15px #2b3445b2;
+  /* ,
+             -5px -5px 10px #fff; */
+  /* border-radius: 1px solid #ccc; */
+}
+
+.action{
+  position: relative;
+  /* z-index: 10; */
+}
+
+.action i{
+  z-index: 10;
+}
+
+.listAction{
+  position: absolute;
+  /* background-color: #3898EC; */
+  top: 2em;
+  z-index: 999;
+  /* color: ; */
+  color: #2b3445 !important;
+  background: #dfe2e7;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  display: flex;
+  flex-direction: column;
+
+  min-width: 15em;
+
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+}
+
+.listAction .ItemAction{
+  margin-top: 0.5em;
+  border: 1px #ccc;
+  padding: 0.3em 0.5em;
+  border-radius: 0.3em;
+}
+
+.listAction .ItemAction:hover{
+  /* background-color: #3898EC; */
+}
+
+.listAction .ItemAction i{
+  margin-right: 0.5em;
+}
+
+.item-primary:hover{
+  
+  background-color:#5e4dcd;
+  color:#fff;
+}
+
+.item-primary:hover .edit{
+  color:#fff;
+  
+}
+
+.item-danger:hover{
+  background-color:#e94560;
+  color:#fff;
+}
+.item-danger:hover .delete{
+  color:#fff;
+}
+
+.header{
+  display: flex;
+}
+
+.header .User {
+  display: flex;
+  align-items: center;
+  width: 15%;
+
+}
+
+.header .User:hover{
+  cursor: pointer;
+}
+
+.header .User img{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.header {
+  position: relative;
+}
+
+.header .logout{
+  position: absolute;
+  top: 120%;
+  z-index: 999;
+  /* background: linear-gradient(135deg, rgba(255, 214, 102, 0.2), rgba(255, 171, 0, 0.2)) rgb(255, 255, 255); */
+  background-color: #2b3445;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.header .logout:hover{
+  background-color: #e94560;
+  transition: 0.3s;
+
+}
+
+.header .User:hover .logout{
+  opacity: 1;
+}
+
+.header .userIcon i{
+  /* width: 3em;
+  height: 3em; */
+  background-color: rgb(243, 245, 249);
+  padding: 1em;
+  border-radius: 50%;
+
+}
+.header .User .login{
+  margin-left: 1em;
+}
+
+
+.boxAuth .MuiFormControl-root{
+  width: 100%;
+}
+
+.rowTask{
+  position: relative;
+}
+
+.line{
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+}
+
+
+.line hr{
+  height: 3px; /* Điều này sẽ làm cho dòng kẻ cao hơn */
+  border: none; /* Bỏ viền của hr */
+  background-color: #ccc;
+}
+
+.BoxDidrowTask{
+  color: #ccc !important;
+  
+}
+.card .title .titleTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .title img{
+  width: 30px;
+}
